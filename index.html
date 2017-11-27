@@ -1,0 +1,125 @@
+<!doctype html>
+<html >
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--[if lt IE 9]>
+                <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+        <![endif]-->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+
+  <link rel="stylesheet" type="text/css" href="template.css" />
+
+   <link href="https://vjs.zencdn.net/5.4.4/video-js.css" rel="stylesheet" />
+
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type='text/javascript' src='menu/js/jquery.cookie.js'></script>
+<script type='text/javascript' src='menu/js/jquery.hoverIntent.minified.js'></script>
+<script type='text/javascript' src='menu/js/jquery.dcjqaccordion.2.7.min.js'></script>
+
+<link href="menu/css/skins/blue.css" rel="stylesheet" type="text/css" />
+<link href="menu/css/skins/graphite.css" rel="stylesheet" type="text/css" />
+<link href="menu/css/skins/grey.css" rel="stylesheet" type="text/css" />
+  
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+  
+  <script src="script.js"></script>
+  
+    <script src="jquery.sticky-kit.js "></script>
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="Michael E. Cotterell" />
+  <meta name="date" content="2017-11-26" />
+  <title>Applied Open Data Science (AODS)</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="template.css" type="text/css" />
+</head>
+<body>
+
+    
+    <div class="navbar navbar-static-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <span class="doc-title">Applied Open Data Science (AODS)</span>
+        <ul class="nav pull-right doc-info">
+                    <li><p class="navbar-text">Michael E. Cotterell</p></li>
+                              <li><p class="navbar-text">November 26, 2017</p></li>
+                  </ul>
+      </div>
+    </div>
+  </div>
+    <div class="container">
+    <div class="row">
+            <div id="TOC" class="span3">
+        <div class="well toc">
+
+        <ul>
+        <li><a href="#applied-open-data-science">Applied Open Data Science</a><ul>
+        <li><a href="#main-projects">Main Projects</a><ul>
+        <li><a href="#aods-guidelines">AODS Guidelines</a></li>
+        <li><a href="#aods-jupyterhub">AODS JupyterHub</a></li>
+        <li><a href="#aods-upload">AODS Upload</a></li>
+        <li><a href="#aods-cloud">AODS Cloud</a></li>
+        </ul></li>
+        <li><a href="#related-projects">Related Projects</a><ul>
+        <li><a href="#scalation">ScalaTion</a></li>
+        <li><a href="#scalation-kernel">ScalaTion Kernel</a></li>
+        </ul></li>
+        </ul></li>
+        </ul>
+
+        </div>
+      </div>
+            <div class="span9">
+            <h1 id="applied-open-data-science">Applied Open Data Science</h1>
+<p>The Applied Open Data Science (AODS) project, hosted here at <a href="http://aods.io/"><code>aods.io</code></a>, serves as an umbrella for various open science projects related to big data frameworks and data science education. The initial release of this site is targeted at readers of Michael E. Cotterell's Ph.D. dissertation.</p>
+<h2 id="main-projects">Main Projects</h2>
+<h3 id="aods-guidelines">AODS Guidelines</h3>
+<p>The AODS Guidelines project, soon to be hosted at <a href="#"><code>github.com/aods-io/aods-guidelines</code></a>, is a primarily a set of guidelines and recommendations for facilitating open science in big data frameworks and data science education. This documentation project is free and open source under a Creative Commons license.</p>
+<p>For more information, see <a href="#"><code>github.com/aods-io/aods-guidelines</code></a>.</p>
+<h3 id="aods-jupyterhub">AODS JupyterHub</h3>
+<p>The AODS JupyterHub project, soon to be hosted at <a href="#"><code>github.com/aods-io/aods-jupyterhub</code></a>, is comprised primarily of a customized JupyterHub<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a> application that supports the ScalaTion<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a> big data framework in Jupyter notebooks via the <a href="#scalation-kernel">ScalaTion Kernel</a> project. This project currently does not modify the JupyterHub code base. Instead, it comprises a set of detailed instructions on how to configure a JupyterHub installation so that it adheres to the <a href="#aods-guidelines">AODS Guidelines</a>. If any changes to the JupyterHub code base are needed, then every effort will be made to properly send these changes back upstream to the main JupyterHub project.</p>
+<p>A proof of concept installation is hosted at <a href="http://hub.aods.io/"><code>hub.aods.io</code></a>, primarily targeted at readers of Michael E. Cotterell's Ph.D. dissertation. The project itself includes detailed instructions on how to replicate the proof of concept setup in variety of ways, including as a containerized application (e.g., using Docker<a href="#fn3" class="footnoteRef" id="fnref3"><sup>3</sup></a>). The two primary goals of this project are i) to make replicating the basic setup as easy and painless as possible; and ii) to not let modifications prevent the inclusion of existing contributions to the Jupyter and JupyterHub projects. This documentation project is free and open source under a Creative Commons license. For more information, see <a href="#"><code>github.com/aods-io/aods-jupyterhub</code></a>.</p>
+<h3 id="aods-upload">AODS Upload</h3>
+<p>The AODS Upload project, soon to be hosted at [<code>github.com/aods-io/aods-upload</code>], is comprised primarily of a web application that facilitates the automatic uploading of notebooks to a JupyterHub workspace. Features include: i) social authentication; ii) rendering notebook previews; iii) and linking a user directly to the uploaded notebook in their <a href="#aods-jupyterhub">AODS JupyterHub</a> workspace. Written in Python<a href="#fn4" class="footnoteRef" id="fnref4"><sup>4</sup></a> using the Django<a href="#fn5" class="footnoteRef" id="fnref5"><sup>5</sup></a> library, the application is designed to perform a minimal set of operations while maintaining a small footprint on the system. Its functionality and implementation are directly motivated by and adhere to the <a href="#aods-guidelines">AODS Guidelines</a>.</p>
+<p>A proof of concept installation is hosted at <a href="http://upload.aods.io"><code>upload.aods.io</code></a>, primarily targeted at readers of Michael E. Cotterell's Ph.D. dissertation. The soon to be published AODS Upload software and documentation are free and open source under an MIT license and Creative Commons license, respectively. For more information, see <a href="#"><code>github.com/aods-io/aods-upload</code></a>.</p>
+<h3 id="aods-cloud">AODS Cloud</h3>
+<p><em>Coming soon!</em></p>
+<p>The AODS Cloud project, soon to be hosted at [<code>github.com/aods-io/aods-upload</code>], is a web application that makes it easier for users to manage, share, and publish the notebook files in a JupyterHub workspace. Features will include: i) social publishing (e.g., using GitHub); ii) basic file management; and iii) integration with <a href="#aods-jupyterhub">AODS JupyterHub</a> and <a href="#aods-upload">AODS Upload</a>. Written in Python<a href="#fn6" class="footnoteRef" id="fnref6"><sup>6</sup></a> using the Django<a href="#fn7" class="footnoteRef" id="fnref7"><sup>7</sup></a> library, the application is designed to perform a minimal set of operations while maintaining a small footprint on the system. Its functionality and implementation are directly motivated by and adhere to the <a href="#aods-guidelines">AODS Guidelines</a>.</p>
+<p>A proof of concept installation <em>will be hosted</em> at <a href="#"><code>cloud.aods.io</code></a>, primarily targeted at readers of Michael E. Cotterell's Ph.D. dissertation. The soon to be published AODS Cloud software and documentation are free and open source under an MIT license and Creative Commons license, respectively. For more information, see <a href="#"><code>github.com/aods-io/aods-cloud</code></a>.</p>
+<h2 id="related-projects">Related Projects</h2>
+<h3 id="scalation">ScalaTion</h3>
+<p>ScalaTion<a href="#fn8" class="footnoteRef" id="fnref8"><sup>8</sup></a> is a big data framework authored by a diverse group of collaborators at the University of Georgia. Written in Scala, ScalaTion provides analytics techniques for prediction, classification, clustering, dimensionality reduction, functional data analysis, and simulation facilities for discrete-event simulation modeling. Major packages include support for serial and parallel execution of algorithms for linear algebra, analytics, simulation, and optimization. The software is free and open source under an MIT License.</p>
+<h3 id="scalation-kernel">ScalaTion Kernel</h3>
+<p>The ScalaTion Kernel project, currently hosted <a href="https://github.com/scalation/scalation_kernel">on GitHub</a>, is a lightweight Jupyter kernel that adds Scala and ScalaTion support to Jupyter<a href="#fn9" class="footnoteRef" id="fnref9"><sup>9</sup></a> notebooks. The kernel can be installed system-wide or in a Python virtual environment. A Docker<a href="#fn10" class="footnoteRef" id="fnref10"><sup>10</sup></a> image is also available for rapid and easy deployment. The ScalaTion Kernel package is free and open source under an MIT License.</p>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p><a href="https://jupyterhub.readthedocs.io/en/latest/" class="uri">https://jupyterhub.readthedocs.io/en/latest/</a><a href="#fnref1">↩</a></p></li>
+<li id="fn2"><p><a href="https://github.com/scalation/scalation" class="uri">https://github.com/scalation/scalation</a><a href="#fnref2">↩</a></p></li>
+<li id="fn3"><p><a href="https://www.docker.com/" class="uri">https://www.docker.com/</a><a href="#fnref3">↩</a></p></li>
+<li id="fn4"><p><a href="https://www.python.org" class="uri">https://www.python.org</a><a href="#fnref4">↩</a></p></li>
+<li id="fn5"><p><a href="https://www.djangoproject.com" class="uri">https://www.djangoproject.com</a><a href="#fnref5">↩</a></p></li>
+<li id="fn6"><p><a href="https://www.python.org" class="uri">https://www.python.org</a><a href="#fnref6">↩</a></p></li>
+<li id="fn7"><p><a href="https://www.djangoproject.com" class="uri">https://www.djangoproject.com</a><a href="#fnref7">↩</a></p></li>
+<li id="fn8"><p><a href="https://github.com/scalation/scalation" class="uri">https://github.com/scalation/scalation</a><a href="#fnref8">↩</a></p></li>
+<li id="fn9"><p><a href="https://jupyter.readthedocs.io/en/latest/" class="uri">https://jupyter.readthedocs.io/en/latest/</a><a href="#fnref9">↩</a></p></li>
+<li id="fn10"><p><a href="https://www.docker.com/" class="uri">https://www.docker.com/</a><a href="#fnref10">↩</a></p></li>
+</ol>
+</div>
+      
+      <hr>
+      <small>
+	<p><a href="https://creativecommons.org/licenses/by-sa/4.0/"><img src="https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg" alt="License: CC BY-SA 4.0" /></a></p>
+	<p>Copyright 2017 Michael E. Cotterell (mepcott@uga.edu) and the University of Georgia. This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>. The software projects described here may be subject to their own licenses. The content and opinions expressed on this Web page do not necessarily reflect the views of nor are they endorsed by the University of Georgia or the University System of Georgia.</p>
+	<p>This site uses the <a href="https://github.com/diversen/pandoc-bootstrap-adaptive-template"><code>pandoc bootstrap adaptive template</code></a> by GitHub user <a href="https://github.com/diversen"><code>diversen</code></a>.</p>
+      </small>
+      
+      </div>
+    </div>
+
+</body>
+</html>
