@@ -9,7 +9,17 @@ The initial release of this site is targeted at readers of Michael E. Cotterell'
 
 ## AODS Guidelines
 
-This section decribes a set of guidelines and recommendations for facilitating open science in big data frameworks and data science education.
+The AODS Guidelines are a set of guidelines for facilitating open science in big data frameworks and data science education.
+In general, data science investigations and, just as importantly, related software should have the following characteristics:
+
+1. **Open:**
+
+2. **Accessible:**
+
+3. **Reproducible:**
+
+While investigators have many options to help them achieve these characteristics in their investigations and software, some options are prohibitive to end users.
+The projects on this site provide example applications and accompanying documentation to help investigators achieve these characteristics.
 
 ## Main Projects
 
