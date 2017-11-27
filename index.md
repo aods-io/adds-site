@@ -7,14 +7,11 @@
 The Applied Open Data Science (AODS) project, hosted here at [`aods.io`](http://aods.io/), serves as an umbrella for various open science projects related to big data frameworks and data science education.
 The initial release of this site is targeted at readers of Michael E. Cotterell's Ph.D. dissertation.
 
+## AODS Guidelines
+
+This section decribes a set of guidelines and recommendations for facilitating open science in big data frameworks and data science education.
+
 ## Main Projects
-
-### AODS Guidelines
-
-The AODS Guidelines project, soon to be hosted at [`github.com/aods-io/aods-guidelines`](#), is a primarily a set of guidelines and recommendations for facilitating open science in big data frameworks and data science education.
-This documentation project is free and open source under a Creative Commons license.
-
-For more information, see [`github.com/aods-io/aods-guidelines`](#).
 
 ### AODS JupyterHub
 
