@@ -12,14 +12,17 @@ The initial release of this site is targeted at readers of Michael E. Cotterell'
 The AODS Guidelines are a set of guidelines for facilitating open science in big data frameworks and data science education.
 In general, data science investigations and, just as importantly, related software should have the following characteristics:
 
-1. **Open:**
+1. **Open:** Software should be [open source](https://opensource.org) under an OSI-approved license.
+   Its documentation should also be open source under a permissive distribution license (e.g., [Creative Commons BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)).  
 
-2. **Accessible:**
+2. **Accessible:** Every effort should be made to make sure that everything needed to use the software is clearly outlined and generally available.
+   Additionaly, software should strive to minimize dependencies in order to promote interoperability with existing solutions.
 
-3. **Reproducible:**
+3. **Reproducible:** Software installations and deployments should be readily reproducible via provided instructions.
+   This allows for others to replicate infrastructure when attempting to reproduce results.
 
 While investigators have many options to help them achieve these characteristics in their investigations and software, some options are prohibitive to end users.
-The projects on this site provide example applications and accompanying documentation to help investigators achieve these characteristics.
+The projects on this site provide example applications and accompanying documentation to help investigators achieve these characteristics as easily as possible.
 
 ## Main Projects
 
@@ -79,10 +82,11 @@ The software is free and open source under an MIT License.
 
 ### ScalaTion Kernel
 
-The ScalaTion Kernel project, currently hosted [on GitHub](https://github.com/scalation/scalation_kernel), is a lightweight Jupyter kernel that adds Scala and ScalaTion support to Jupyter[^jupyter] notebooks.
+The ScalaTion Kernel project, hosted at [`github.com/scalation/scalation_kernel`](https://github.com/scalation/scalation_kernel), is a lightweight Jupyter kernel that adds Scala and ScalaTion support to Jupyter[^jupyter] notebooks.
 The kernel can be installed system-wide or in a Python virtual environment.
 A Docker[^docker] image is also available for rapid and easy deployment.
 The ScalaTion Kernel package is free and open source under an MIT License.
 
 [^jupyter]: [https://jupyter.readthedocs.io/en/latest/](https://jupyter.readthedocs.io/en/latest/)
 [^docker]: [https://www.docker.com/](https://www.docker.com/)
+
