@@ -53,6 +53,7 @@ For more information, see [`github.com/aods-io/aods-upload`](https://github.com/
 [^python]: [https://www.python.org](https://www.python.org)
 [^django]: [https://www.djangoproject.com](https://www.djangoproject.com)
 
+<!---
 ### AODS Cloud
 
 *Coming soon!*
@@ -65,6 +66,7 @@ Its functionality and implementation are directly motivated by and adhere to the
 A proof of concept installation *will be hosted* at [`cloud.aods.io`](#), primarily targeted at readers of Michael E. Cotterell's Ph.D. dissertation.
 The soon to be published AODS Cloud software and documentation are free and open source under an MIT license and Creative Commons license, respectively.
 For more information, see [`github.com/aods-io/aods-cloud`](#).
+-->
 
 ## Related Projects
 
